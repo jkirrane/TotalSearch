@@ -1,0 +1,14 @@
+body {
+	min-width: 357px;
+	overflow-x: hidden;
+	padding:10px;
+}
+
+img {
+	margin: 5px;
+	border: 2px solid black;
+}
+
+.results {
+	padding-top:10px;
+}

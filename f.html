@@ -1,0 +1,46 @@
+
+<!doctype html>
+<html>
+  <head>
+    <title>Total Search Chrome Extension</title>
+    
+    <!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+	
+	<link rel="stylesheet" href="styles.css">
+    <!--
+      - JavaScript and HTML must be in separate files: see our Content Security
+      - Policy documentation[1] for details and explanation.
+      -
+      - [1]: http://developer.chrome.com/extensions/contentSecurityPolicy.html
+     -->
+    <script src="jquery.min.js"></script>
+	<!-- Latest compiled and minified JavaScript -->
+	<script src="bootstrap.min.js"></script>
+    <script src="tabLoad.js"></script>
+  </head>
+  <body>
+	  
+	<div role="tabpanel">
+
+	  <!-- Nav tabs -->
+	  <ul class="nav nav-tabs" role="tablist">
+	    <li role="presentation" class="active"><a href="#wiki" aria-controls="wiki" role="tab" data-toggle="tab">Wikipedia</a></li>
+	    <li role="presentation"><a href="#images" aria-controls="Flickr" role="tab" data-toggle="tab">Images</a></li>
+	  </ul>
+	
+	  <!-- Tab panes -->
+	  <div class="tab-content">
+	    <div role="tabpanel" class="tab-pane active" id="wiki">
+			<div class="results"></div>
+	    </div>
+	    <div role="tabpanel" class="tab-pane" id="images">
+		    <div class="results"></div>
+	    </div>
+	  </div>
+	
+	</div> 
+	 
+  </body>
+</html>
+

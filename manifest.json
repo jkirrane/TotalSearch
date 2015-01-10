@@ -3,7 +3,7 @@
 
   "name": "TotalSearch",
   "description": "Search Wikipedia and Google Images with just a click.",
-  "version": "1.0",
+  "version": "1.0.1",
   "background": {
 	"scripts": ["backgroundPage.js"],
     "persistent": false

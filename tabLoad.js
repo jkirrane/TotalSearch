@@ -9,10 +9,10 @@ function onPageDetailsReceived(pageDetails)  {
 	    $('body').html('Please highlight text and try again.');
     } else {
 	    var wikiText = formatString(selectedText);
-	    var flickrText = encodeURI(selectedText);
 	    var imageText = encodeURI(selectedText);
+		var imageUrl = 'https://ajax.googleapis.com/ajax/services/search/images?v=1.0&q='+imageText+'&rsz=8';
 	    getWikiResults(wikiText);
-	    getImageResults(imageText);
+	    getImageResults(imageUrl);
 	}
 }
 
@@ -31,11 +31,9 @@ function getWikiResults(text) {
 	});
 }
 
-function getImageResults(text) {
-	var lookupURL = 'https://ajax.googleapis.com/ajax/services/search/images?v=1.0&q='+text;
+function getImageResults(lookupUrl) {
 	
-	$.getJSON(lookupURL, function(data) {
-		console.log(data);
+	$.getJSON(lookupUrl, function(data) {
 		var results = data.responseData.results;
 		var len = results.length;
 		console.log(len);
